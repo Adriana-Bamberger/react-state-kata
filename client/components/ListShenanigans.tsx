@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function ListShenanegans() {
+function ListShenanigans() {
   const [lists, setLists] = useState({
     left: [
       'Apple',
@@ -21,7 +21,7 @@ function ListShenanegans() {
 
   return (
     <>
-      <h2>List Shenanegans</h2>
+      <h2>List Shenanigans</h2>
       <section className="container">
         {/* left list */}
         <ul>
@@ -39,4 +39,4 @@ function ListShenanegans() {
   )
 }
 
-export default ListShenanegans
+export default ListShenanigans
