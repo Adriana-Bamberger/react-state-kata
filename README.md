@@ -67,7 +67,7 @@ Consider keeping the status of the pixel in the component as well, so it can rem
 
   </details>
 
-## Kata Three - List Shenanegans
+## Kata Three - List Shenanigans
 
 ### User Story
 
