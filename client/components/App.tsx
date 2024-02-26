@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import FunWithNumbers from './FunWithNumbers'
 import NeglectThePumpkins from './NeglectThePumpkins'
-import ListShenanegans from './ListShenanegans'
+import ListShenanigans from './ListShenanigans'
 import PixelParty from './PixelParty'
 import Select from './Select'
 
@@ -16,7 +16,7 @@ function App() {
           <p>Choose a kata to display</p>
           <button>Fun with Numbers</button>
           <button>Pixel Party</button>
-          <button>List Shenanegans</button>
+          <button>List Shenanigans</button>
           <button>Neglect the Pumpkins</button>
         </nav>
       </header>
@@ -24,7 +24,7 @@ function App() {
         {activeKata === 'select' && <Select />}
         {activeKata === 'funWithNumbers' && <FunWithNumbers />}
         {activeKata === 'pixelParty' && <PixelParty />}
-        {activeKata === 'listShenanegans' && <ListShenanegans />}
+        {activeKata === 'listShenanigans' && <ListShenanigans />}
         {activeKata === 'neglectThePumpkins' && <NeglectThePumpkins />}
       </main>
     </>
