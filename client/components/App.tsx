@@ -14,10 +14,10 @@ function App() {
         <h1>React Kata</h1>
         <nav>
           <p>Choose a kata to display</p>
-          <button>Fun with Numbers</button>
-          <button>Pixel Party</button>
-          <button>List Shenanigans</button>
-          <button>Neglect the Pumpkins</button>
+          <button onClick={() => setActiveKata('funWithNumbers')}>Fun with Numbers</button>
+          <button onClick={() => setActiveKata('pixelParty')}>Pixel Party</button>
+          <button onClick={() => setActiveKata('listShenanigans')}>List Shenanigans</button>
+          <button onClick={() => setActiveKata('neglectThePumpkins')}>Neglect the Pumpkins</button>
         </nav>
       </header>
       <main>
