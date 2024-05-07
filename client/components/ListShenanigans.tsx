@@ -19,6 +19,20 @@ function ListShenanigans() {
     ],
   })
 
+  function handleMoveLeft(item: string) {
+    setLists({
+      right: lists.right.filter((string) => string !== item),
+      left: [...lists.left, item].sort(),
+    })
+  }
+
+  function handleMoveRight(item: string) {
+    setLists({
+      left: lists.left.filter((string) => string !== item),
+      right: [...lists.right, item].sort(),
+    })
+  }
+
   return (
     <>
       <h2>List Shenanigans</h2>
@@ -27,13 +41,18 @@ function ListShenanigans() {
         <ul>
           {lists.left.map((item) => (
             <li key={item}>
-              {item} <button>→</button>
+              {item} <button onClick={() => handleMoveRight(item)}>→</button>
             </li>
           ))}
         </ul>
         {/* right list */}
-        {/* use the ← character for the button in this list */}
-        <ul></ul>
+        <ul>
+          {lists.right.map((item) => (
+            <li key={item}>
+              {item} <button onClick={() => handleMoveLeft(item)}>←</button>
+            </li>
+          ))}
+        </ul>
       </section>
     </>
   )
